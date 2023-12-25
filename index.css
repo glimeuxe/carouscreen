@@ -1,0 +1,48 @@
+*,
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow: hidden;
+}
+
+img.background {
+	position: absolute;
+	width: 100vw;
+	object-fit: cover;
+	z-index: -10;
+}
+
+div.carousel {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+div.carousel-cell {
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	margin: 0;
+	padding: 0 6rem;
+}
+
+div.carousel-cell a {
+	font-size: 7.2rem;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke: 1px white;
+	text-decoration: none;
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
+}
+
+div.carousel-cell.is-selected a {
+	color: white;
+	-webkit-text-stroke: 0 white;
+}
